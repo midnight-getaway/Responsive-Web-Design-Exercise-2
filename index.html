@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+        </button>
+        <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" aria-label="Main content">
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Home</h2>
+            <p>Welcome to our website. This is the main content area.</p>
+            <p><a class="button-link" href="#services">Explore Our Services</a></p>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <article>
+                <h3>Our Story</h3>
+                <p>Learn more about who we are and what we do.</p>
+            </article>
+        </section>
+
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <article>
+                <h3>Service One</h3>
+                <p>Description of the first service we offer.</p>
+            </article>
+            <article>
+                <h3>Service Two</h3>
+                <p>Description of the second service we offer.</p>
+            </article>
+        </section>
+
+        <section id="testimonials" aria-labelledby="testimonials-heading">
+            <h2 id="testimonials-heading">Testimonials</h2>
+            <article>
+                <h3>Client Feedback</h3>
+                <p>"The team was responsive, professional, and easy to work with."</p>
+            </article>
+            <article>
+                <h3>Project Outcome</h3>
+                <p>"Our new layout works great on phones, tablets, and desktop screens."</p>
+            </article>
+        </section>
+
+        <aside aria-label="Related information">
+            <h3>Related Information</h3>
+            <p>Additional content that complements the main content.</p>
+        </aside>
+    </main>
+
+    <footer aria-label="Site footer">
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <address>
+                <p>Email: <a href="mailto:info@example.com" aria-label="Send email to info@example.com">info@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" aria-label="Call (123) 456-7890">(123) 456-7890</a></p>
+            </address>
+        </section>
+        <p id="copyright"><small>&copy; 2026 My Website. All rights reserved.</small></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 
