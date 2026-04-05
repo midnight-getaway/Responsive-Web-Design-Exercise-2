@@ -3,85 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design</title>
+    <meta name="description" content="Keady Van&nbsp;Zandt: nonprofit professional and Informatics (UX) student at UAlbany. Data, technology, and community impact. Schenectady, NY.">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    <link rel="canonical" href="https://midnight-getaway.github.io/Responsive-Web-Design-Exercise-2/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Keady Van Zandt | Nonprofit Data &amp; Systems · M365 &amp; Dynamics 365">
+    <meta property="og:description" content="Keady Van Zandt: nonprofit professional and Informatics (UX) student at UAlbany. Data, technology, and community impact. Schenectady, NY.">
+    <meta property="og:url" content="https://midnight-getaway.github.io/Responsive-Web-Design-Exercise-2/">
+    <meta property="og:image" content="https://midnight-getaway.github.io/Responsive-Web-Design-Exercise-2/images/favicon-192.png">
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="192">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Keady Van Zandt | Nonprofit Data &amp; Systems">
+    <meta name="twitter:description" content="Nonprofit data &amp; systems, M365 &amp; Dynamics 365, Informatics UX — University at Albany.">
+    <meta name="twitter:image" content="https://midnight-getaway.github.io/Responsive-Web-Design-Exercise-2/images/favicon-192.png">
+    <title>Keady Van&nbsp;Zandt | Nonprofit Data &amp; Systems · M365 &amp; Dynamics 365</title>
+    <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/favicon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="images/favicon-192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Keady Van Zandt",
+        "url": "https://midnight-getaway.github.io/Responsive-Web-Design-Exercise-2/",
+        "email": "keadycvz@gmail.com",
+        "image": "https://midnight-getaway.github.io/Responsive-Web-Design-Exercise-2/images/favicon-192.png",
+        "jobTitle": "Data strategy, systems administration, and community impact",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "United Way of the Greater Capital Region"
+        },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "University at Albany" },
+            { "@type": "CollegeOrUniversity", "name": "SUNY Adirondack" }
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Schenectady",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://github.com/midnight-getaway",
+            "https://www.linkedin.com/in/keady-van-zandt-a49584125/"
+        ]
+    }
+    </script>
 </head>
-<body>
+<body id="top">
     <a class="skip-link" href="#main-content">Skip to main content</a>
-
     <header>
-        <h1>Welcome to My Website</h1>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <div class="header-brand">
+            <img class="headshot" src="images/headshot.JPG" alt="Portrait of Keady Van&nbsp;Zandt" width="136" height="136" loading="eager" decoding="async">
+            <div class="header-text">
+                <p class="site-tagline">Nonprofit data &amp; systems · Microsoft Administration · Informatics User Experience</p>
+                <h1>Keady <span class="name-last">Van&nbsp;Zandt</span></h1>
+            </div>
+        </div>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
             <span class="sr-only">Toggle navigation</span>
             Menu
         </button>
         <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content" aria-label="Main content">
-        <section id="home" aria-labelledby="home-heading">
-            <h2 id="home-heading">Home</h2>
-            <p>Welcome to our website. This is the main content area.</p>
-            <p><a class="button-link" href="#services">Explore Our Services</a></p>
+        <section id="intro" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Intro</h2>
+            <p class="lead">I'm a nontraditional student finishing a B.S. in Informatics with a concentration in User Experience at the University at Albany, while working full time in the nonprofit sector. My coursework and my career keep circling the same question: how do we build data systems and technology that actually serve communities, not just function?</p>
+            <p>My work lives at the intersection of <strong>data, technology, and social good</strong>. I care about systems that are accountable and equitable, and in practice that looks like telling stories with data, advocating for thoughtful tech adoption in nonprofit and civic spaces, and helping people connect with the resources they need.</p>
+            <p>If you're working where community impact meets technology, <a href="#contact">I'd love to connect</a>.</p>
+            <p class="intro-cta"><a class="button-link" href="#projects">View selected projects</a></p>
         </section>
 
-        <section id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Us</h2>
+        <section id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
             <article>
-                <h3>Our Story</h3>
-                <p>Learn more about who we are and what we do.</p>
-            </article>
-        </section>
-
-        <section id="services" aria-labelledby="services-heading">
-            <h2 id="services-heading">Our Services</h2>
-            <article>
-                <h3>Service One</h3>
-                <p>Description of the first service we offer.</p>
-            </article>
-            <article>
-                <h3>Service Two</h3>
-                <p>Description of the second service we offer.</p>
+                <h3>Education &amp; focus</h3>
+                <ul class="education-list">
+                    <li><strong>University at Albany</strong>: B.S. Informatics, concentration in User Experience (in progress).</li>
+                    <li><strong>SUNY Adirondack</strong>: A.S. Individual Studies, Business Marketing, Management &amp; Entrepreneurship.</li>
+                    <li><strong>LEAN Six Sigma</strong>: Yellow Belt.</li>
+                </ul>
+                <h3>Career</h3>
+                <p>At <strong>United Way of the Greater Capital Region</strong>, I lead data strategy and governance: infrastructure, reporting, Power BI dashboards, and standards that support fundraising and community impact, paired with <strong>systems administration</strong> work across the Microsoft cloud, including <strong>M365</strong> and <strong>Dynamics 365</strong> environments. I also serve as a Data Management Intern in Community Impact: auditing workflows, improving processes, and building dashboards staff can sustain.</p>
+                <p>Previously I managed partner technology at the <strong>Regional Food Bank of Northeastern New York</strong> (including ERP migration to Primarius), and I spent several years in operations and CRM-related work at <strong>Travelers Insurance</strong>.</p>
             </article>
         </section>
 
-        <section id="testimonials" aria-labelledby="testimonials-heading">
-            <h2 id="testimonials-heading">Testimonials</h2>
-            <article>
-                <h3>Client Feedback</h3>
-                <p>"The team was responsive, professional, and easy to work with."</p>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Selected Projects</h2>
+            <article class="project project--featured">
+                <p class="project-badge">Featured</p>
+                <h3>We Will Get By</h3>
+                <p class="project-stack">HTML · CSS · community UX · GitHub Pages</p>
+                <p>A public advocacy site for the Capital Region: events, sign-up, news and resources, and space for local voices, including optional anonymous sharing via Discord or email. Built to inform residents and strengthen community action.</p>
+                <p class="project-links"><a href="https://midnight-getaway.github.io/WeWillGetBy/" target="_blank" rel="noopener noreferrer" aria-label="We Will Get By live website">Live site</a> · <a href="https://github.com/midnight-getaway/WeWillGetBy" target="_blank" rel="noopener noreferrer" aria-label="We Will Get By source on GitHub">Source on GitHub</a></p>
             </article>
-            <article>
-                <h3>Project Outcome</h3>
-                <p>"Our new layout works great on phones, tablets, and desktop screens."</p>
+            <article class="project">
+                <h3>Civic Data Hub</h3>
+                <p class="project-stack">HTML · dashboards · data presentation</p>
+                <p>A web-based project that aggregates trusted New York State–level data into interactive dashboards with filtering by region, population, and timeframe, built to make public data easier to explore.</p>
+                <p class="project-links"><a href="https://github.com/midnight-getaway/CivicDataHub" target="_blank" rel="noopener noreferrer" aria-label="Civic Data Hub on GitHub">Repository on GitHub</a></p>
             </article>
         </section>
 
-        <aside aria-label="Related information">
-            <h3>Related Information</h3>
-            <p>Additional content that complements the main content.</p>
+        <aside aria-label="Skills and tools">
+            <h3>Skills &amp; tools</h3>
+            <ul class="aside-list">
+                <li><strong>Nonprofit data &amp; systems:</strong> Data governance, infrastructure, analytics strategy, dashboard development (Power BI), program evaluation, grant reporting, SQL.</li>
+                <li><strong>Microsoft 365 administration:</strong> Tenant and collaboration services, Entra ID, Exchange Online, SharePoint, Teams, Power Platform alignment, and day-to-day platform operations for staff and partners.</li>
+                <li><strong>Dynamics 365 administration:</strong> CRM and related Dynamics environments: configuration, security concepts, and supporting data quality alongside advancement and program teams.</li>
+                <li><strong>Automation &amp; development:</strong> Power Automate; HTML, CSS, JavaScript, Python, GitHub.</li>
+            </ul>
         </aside>
     </main>
 
     <footer aria-label="Site footer">
         <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact Us</h2>
+            <h2 id="contact-heading">Contact</h2>
+            <p class="contact-location">Schenectady, New York.</p>
+            <p class="contact-intro">Reach out by <a href="mailto:keadycvz@gmail.com">email</a> or phone, or connect on GitHub and LinkedIn.</p>
             <address>
-                <p>Email: <a href="mailto:info@example.com" aria-label="Send email to info@example.com">info@example.com</a></p>
-                <p>Phone: <a href="tel:+1234567890" aria-label="Call (123) 456-7890">(123) 456-7890</a></p>
+                <p><a href="mailto:keadycvz@gmail.com" title="Open your email app to message keadycvz@gmail.com">keadycvz@gmail.com</a></p>
+                <p><a href="tel:+15182609929" aria-label="Call (518) 260-9929">(518) 260-9929</a></p>
+                <p><a href="https://github.com/midnight-getaway" target="_blank" rel="noopener noreferrer" aria-label="Keady Van Zandt on GitHub">github.com/midnight-getaway</a></p>
+                <p><a href="https://www.linkedin.com/in/keady-van-zandt-a49584125/" target="_blank" rel="noopener noreferrer" aria-label="Keady Van Zandt on LinkedIn">LinkedIn profile</a></p>
             </address>
         </section>
-        <p id="copyright"><small>&copy; 2026 My Website. All rights reserved.</small></p>
+        <p id="copyright"><small>&copy; 2026 Keady <span class="name-last">Van&nbsp;Zandt</span>. All rights reserved.</small></p>
     </footer>
 
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+    <script>
+        (function () {
+            var btn = document.getElementById("back-to-top");
+            if (!btn) return;
+            var threshold = 280;
+            function update() {
+                var show = window.scrollY > threshold;
+                btn.hidden = !show;
+                btn.setAttribute("aria-hidden", show ? "false" : "true");
+            }
+            window.addEventListener("scroll", update, { passive: true });
+            window.addEventListener("hashchange", update);
+            update();
+            btn.addEventListener("click", function () {
+                var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+                var header = document.querySelector("header");
+                if (header) {
+                    header.setAttribute("tabindex", "-1");
+                    header.focus({ preventScroll: true });
+                }
+            });
+        })();
+    </script>
     <script src="script.js" defer></script>
 </body>
-</html> 
+</html>
